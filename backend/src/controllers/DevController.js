@@ -3,6 +3,13 @@ const Dev = require('../models/Dev');
 const parseStringAsArray = require('../Utils/parseStringAsArray');
 
 module.exports = {
+    
+    async destroy(request, response){
+        const devs = await Dev.find();
+        console.log(devs);
+        return response.json({});
+         
+    },
     async index(request, response){
         const devs = await Dev.find();
         return response.json(devs);
@@ -35,9 +42,6 @@ module.exports = {
     },
 
     async update(){
-
-    },
-    async destroy(){
 
     },
 };

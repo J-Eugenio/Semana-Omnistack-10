@@ -21,4 +21,8 @@
         margin-left: 0px;
         margin-top: 30px;
     }
+
+    #app aside{
+        width: 100%;
+    }
 }
